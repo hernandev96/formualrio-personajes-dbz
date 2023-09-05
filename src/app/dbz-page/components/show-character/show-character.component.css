@@ -1,0 +1,19 @@
+h3{
+    height: 60px;
+    width: auto;
+    background-color: white;
+    color:black;
+    text-shadow: 3px 3px rgb(135,206,250);
+    
+
+}
+.text-div{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+.contenedor{
+    width: 20rem;
+    height: 400px;
+    
+}

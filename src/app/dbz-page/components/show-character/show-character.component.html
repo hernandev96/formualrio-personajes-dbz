@@ -1,0 +1,28 @@
+<div class="row" *ngIf="characters.length!==0;else showNothing">
+    <div class="contenedor" *ngFor="let character of characters;index as i;">
+        <div class="card">
+            <img src="{{character.avatar}}" alt="Imagen del usuario" class="card-img-top" style="height: 150px;">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Nombre: <strong> {{character.name}}</strong>
+                </h5>
+                <p class="card-text">
+                    Power: <strong>{{character.power}}</strong>
+                </p>
+                <p class="card-text"> 
+                    Ataque Principal: <strong>{{character.ataque_principal}}</strong>
+                </p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-outline-danger" (click)="delete(i)">
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #showNothing>
+    <div class="text-div">
+        <h3>Aun no hay participantes registrados</h3>
+    </div>
+</ng-template>
