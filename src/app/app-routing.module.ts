@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DbzPageComponent } from './dbz-page/dbz-page.component';
 
 const routes: Routes = [
-  { path: '/', component: DbzPageComponent }
+  { path: '', component: DbzPageComponent }
 ];
 
 @NgModule({
